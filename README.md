@@ -1,35 +1,33 @@
 <div align="center">
-plain
-    _                       _       _     ___________ _____ 
-   | |                     (_)     | |   |_   _| ___ \  ___|
-   | |     ___  _   _ _ __  _ _ __ | |_    | | | |_/ / |__  
-   | |    / _ \| | | | '_ \| | '_ \| __|   | | |    /|  __| 
-   | |___| (_) | |_| | | | | | | | | |_   _| |_| |\ \| |___ 
-   \_____/\___/ \__,_|_| |_|_|_| |_|\__|  \___/\_| \_\____/ 
-sumit@github:~$ whoami → security nerd. terminal dweller. builder of things.
-portfolio · twitter/x · github
-</div>
-bash
-$ cat about.txt
-> 20something. i break stuff to learn how it works.
-> mostly code in python & js. occasionally c when i'm feeling brave.
-> current obsession: low-level security & automation.
-> i use arch btw. (kidding. but also not.)
 
-$ ls skills/
-python/  javascript/  bash/  docker/  linux/  web-security/
+# `[Your Name]`
+### `@YOUR-USERNAME`
 
-$ ps aux | grep current
-> building tools at sumit.is-a.dev
-> grinding ctf challenges
-> trying to write code that doesn't make future me cry
+`[Your City]` · `[he/him | she/her | they/them]`
 
-$ echo $SOCIALS
-> x: @sumit0xff
-> github: @sumit0xff  (you're here)
-> portfolio: sumit.is-a.dev
+full stack dev · going deep on devops · exploring web3 & cybersecurity
 
-$ exit
-<div align="center">
-> access granted. welcome.
+`[PLACEHOLDER — one blunt line about you. No fluff. Example: "I ship code, break infra on purpose to learn it, and read too much about exploits."]`
+
+---
+
+![GitHub followers](https://img.shields.io/github/followers/YOUR-USERNAME?style=social)
+
+---
+
+🔗 [github.com/YOUR-USERNAME](#)
+🔗 [linkedin.com/in/YOUR-LINKEDIN](#)
+🔗 [YOUR-PORTFOLIO.dev](#)
+🔗 [x.com/YOUR-TWITTER](#)
+
+---
+
+`stack:` JavaScript · TypeScript · React · Node.js · Docker · Kubernetes
+`learning:` DevOps pipelines, Web3 fundamentals
+`curious about:` Cybersecurity
+
+---
+
+<sub>this readme was last touched on `[date]` — if it's older than 3 months, assume I got busy, not that I quit.</sub>
+
 </div>
