@@ -1,60 +1,72 @@
-<div align="center">
-
-<img src="./assets/name-glow.svg" alt="whoami terminal glow animation" />
-
-<img src="./assets/location-glow.svg" alt="localhost location gag glow animation" />
 
 <div align="center">
-<img src="./assets/name-glow.svg" alt="whoami terminal glow animation" />
-<img src="./assets/location-glow.svg" alt="localhost location gag glow animation" />
 
-full stack dev · going deep on devops · exploring web3 & cybersecurity
+<!-- Replace with your looping video/GIF -->
+<!-- Recommended names: whoami-loop.mp4 | term-cursor.mp4 | status-bar.mp4 -->
+<!-- <video src="./assets/whoami-loop.mp4" autoplay loop muted playsinline width="600" /> -->
 
-Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity because I can't leave a locked door alone.
+<img src="./assets/name-glow.svg" alt="whoami" />
+<img src="./assets/location-glow.svg" alt="localhost" />
 
----
-### 🧠 Know About Me
- 
-Okay real talk — I was that kid who broke stuff on purpose just to see how it worked. Remote controls, old phones, whatever I could get my hands on before someone stopped me. Didn't know why I was doing it back then. Just had to *see inside*.
- 
-Turns out that never went away. It just changed shape.
- 
-Now it's apps instead of remote controls. I'll be using something completely normal and then — mid-scroll — something in my brain goes "wait, why does this work like this." A bug shows up and everyone else moves on. I can't. I sit with it. Who wrote this. Why'd it break here and not there. Why did an entire team look at this UI and go "yeah, ship it."
- 
-I don't get annoyed at bad software. I get *nosy*. There's a difference, and it's the difference that got me into building things instead of just using them.
- 
-Still don't fully know what I'm chasing. Just know I haven't stopped since I was a kid, and I don't plan to.
- 
----
+<pre>
+full stack dev  ·  devops  ·  web3  ·  cybersecurity
+</pre>
 
-![GitHub followers](https://img.shields.io/github/followers/sumit0xff?style=social)
+</div>
 
 ---
 
-🔗 [github.com/sumit0xff](https://github.com/sumit0xff)
-🔗 [linkedin.com/in/YOUR-LINKEDIN](#)
-🔗 [sumit.is-a.dev](https://sumit.is-a.dev/)
-🔗 [x.com/YOUR-TWITTER](#)
+<div align="center">
+
+<pre>
+┌─────────────────────────────────────────┐
+│  $ whoami                               │
+│  > sumit                                │
+│                                         │
+│  $ cat stack.txt                        │
+│  > react · next.js · node · express     │
+│  > mongodb · postgresql                 │
+│                                         │
+│  $ uptime                               │
+│  > breaking things since childhood      │
+└─────────────────────────────────────────┘
+</pre>
+
+</div>
 
 ---
 
-`frontend:` React · Next.js
-`backend:` Node.js · Express
-`database:` MongoDB · MySQL · PostgreSQL
-`devops (learning):` Docker · Kubernetes · CI/CD pipelines (GitHub Actions)
-`web3 (curious about):` Solidity · Smart Contracts · Ethereum · dApps · Wallet Integration (MetaMask/Web3.js)
-`security (curious about):` OWASP Top 10 · Web App Pentesting Basics · Ethical Hacking Fundamentals
+### now
 
-### 🛠️ Skills
- 
-`frontend:` React · Next.js
-`backend:` Node.js · Express
-`database:` MongoDB · MySQL · PostgreSQL
-`devops (learning):` Docker · Kubernetes · CI/CD pipelines (GitHub Actions)
-`web3 (curious about):` Solidity · Smart Contracts · Ethereum · dApps · Wallet Integration (MetaMask/Web3.js)
-`security (curious about):` OWASP Top 10 · Web App Pentesting Basics · Ethical Hacking Fundamentals
- 
+full stack by trade. devops by obsession. web3 by curiosity. cybersecurity because i can't leave a locked door alone.
+
+i was the kid who broke remote controls just to see the inside. still am — just the remotes got bigger.
+
 ---
-<sub>this readme was last touched on `[date]` — if it's older than 3 months, assume I got busy, not that I quit.</sub>
+
+### stack
+
+```
+frontend     react · next.js
+backend      node.js · express
+database     mongodb · mysql · postgresql
+devops       docker · kubernetes · ci/cd (github actions)
+web3         solidity · smart contracts · ethereum · dapps
+security     owasp top 10 · web app pentesting · ethical hacking
+```
+
+---
+
+### links
+
+[`github`](https://github.com/sumit0xff) · [`website`](https://sumit.is-a.dev/) · [`x`](https://x.com/YOUR-TWITTER) · [`linkedin`](https://linkedin.com/in/YOUR-LINKEDIN)
+
+---
+
+<div align="center">
+
+<sub>
+this readme was last touched on `2026-08-04` — if it's older than 3 months, assume i got busy, not that i quit.
+</sub>
 
 </div>
