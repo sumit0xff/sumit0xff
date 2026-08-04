@@ -1,0 +1,21 @@
+<svg width="500" height="80" viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur">
+        <animate attributeName="stdDeviation" values="1.5;5;1.5" dur="4s" repeatCount="indefinite" />
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="250" y="48" font-family="Fira Code, monospace" font-size="32" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.55;1" dur="4s" repeatCount="indefinite"/>
+    $ whoami
+  </text>
+  <text x="250" y="48" font-family="Fira Code, monospace" font-size="32" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.45;0.55;1" dur="4s" repeatCount="indefinite"/>
+    sumit0xff
+  </text>
+</svg>
