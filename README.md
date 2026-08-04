@@ -1,72 +1,190 @@
-
 <div align="center">
 
-<!-- Replace with your looping video/GIF -->
-<!-- Recommended names: whoami-loop.mp4 | term-cursor.mp4 | status-bar.mp4 -->
-<!-- <video src="./assets/whoami-loop.mp4" autoplay loop muted playsinline width="600" /> -->
+# $ whoami
 
-<img src="./assets/name-glow.svg" alt="whoami" />
-<img src="./assets/location-glow.svg" alt="localhost" />
+```bash
+sumit@github:~$ whoami
 
-<pre>
-full stack dev  ·  devops  ·  web3  ·  cybersecurity
-</pre>
+Sumit
 
-</div>
-
----
-
-<div align="center">
-
-<pre>
-┌─────────────────────────────────────────┐
-│  $ whoami                               │
-│  > sumit                                │
-│                                         │
-│  $ cat stack.txt                        │
-│  > react · next.js · node · express     │
-│  > mongodb · postgresql                 │
-│                                         │
-│  $ uptime                               │
-│  > breaking things since childhood      │
-└─────────────────────────────────────────┘
-</pre>
-
-</div>
-
----
-
-### now
-
-full stack by trade. devops by obsession. web3 by curiosity. cybersecurity because i can't leave a locked door alone.
-
-i was the kid who broke remote controls just to see the inside. still am — just the remotes got bigger.
-
----
-
-### stack
-
+Software Engineer
+Building products > collecting certificates.
 ```
-frontend     react · next.js
-backend      node.js · express
-database     mongodb · mysql · postgresql
-devops       docker · kubernetes · ci/cd (github actions)
-web3         solidity · smart contracts · ethereum · dapps
-security     owasp top 10 · web app pentesting · ethical hacking
+
+<img src="./assets/header.gif" width="100%"/>
+
+</div>
+
+---
+
+# $ uname -a
+
+```txt
+OS          :: Linux (sometimes Windows)
+Location    :: India
+Alias       :: sumit0xff
+
+Focus
+├── Backend Engineering
+├── AI
+├── Cyber Security
+└── Building products
+
+Current Status
+███████████████████░ 92%
+
+Learning > Talking
+Shipping > Planning
 ```
 
 ---
 
-### links
+# $ ls projects/
 
-[`github`](https://github.com/sumit0xff) · [`website`](https://sumit.is-a.dev/) · [`x`](https://x.com/YOUR-TWITTER) · [`linkedin`](https://linkedin.com/in/YOUR-LINKEDIN)
+```txt
+.
+├── NerdTube/
+│   Modern YouTube clone
+│
+├── Portfolio/
+│   Interactive portfolio
+│
+├── Morph/
+│   AI experiments
+│
+├── DraftForge/
+│   Markdown editor
+│
+└── More coming...
+```
+
+---
+
+# $ tree stack/
+
+```txt
+stack
+│
+├── frontend
+│   ├── React
+│   ├── Next.js
+│   ├── TypeScript
+│   ├── Tailwind
+│   └── Zustand
+│
+├── backend
+│   ├── Node.js
+│   ├── Express
+│   ├── Python
+│   └── REST APIs
+│
+├── database
+│   ├── PostgreSQL
+│   ├── MongoDB
+│   └── Prisma
+│
+├── devops
+│   ├── Git
+│   ├── GitHub
+│   ├── Docker (Learning)
+│   └── Linux
+│
+└── tools
+    ├── VS Code
+    ├── Figma
+    └── Postman
+```
+
+---
+
+# $ cat philosophy.txt
+
+```txt
+Write code.
+
+Ship.
+
+Break.
+
+Fix.
+
+Repeat.
+```
+
+---
+
+# $ cat currently_doing.txt
+
+```txt
+✓ Learning Backend Engineering
+
+✓ Learning Python
+
+✓ Learning Cyber Security
+
+✓ Building real-world projects
+
+✓ Improving engineering fundamentals
+```
+
+---
+
+# $ github stats
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=sumit0xff&theme=github_dark&hide_border=true&show_icons=true"/>
+
+<img height="170" src="https://streak-stats.demolab.com?user=sumit0xff&theme=github-dark-blue&hide_border=true"/>
+
+</div>
 
 ---
 
 <div align="center">
 
-<sub>
-this readme was last touched on `2026-08-04` — if it's older than 3 months, assume i got busy, not that i quit.
-</sub>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumit0xff&layout=compact&theme=github_dark&hide_border=true"/>
 
 </div>
+
+---
+
+# $ git log --future
+
+```txt
+[ ] Become an exceptional backend engineer
+
+[ ] Build SaaS products
+
+[ ] Contribute to open source
+
+[ ] Launch products used by thousands
+
+[ ] Never stop learning
+```
+
+---
+
+# $ ping me
+
+```txt
+GitHub     :: https://github.com/sumit0xff
+
+Portfolio  :: https://sumit.is-a.dev
+```
+
+---
+
+<div align="center">
+
+<img src="./assets/footer.gif" width="100%"/>
+
+</div>
+
+```bash
+visitor@github:~$ logout
+
+Connection closed.
+
+See you in the next commit.
+```
