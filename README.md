@@ -12,17 +12,17 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity becau
 ---
 
 🔗 [github.com/sumit0xff](https://github.com/sumit0xff)
-🔗 [linkedin.com/in/YOUR-LINKEDIN]()
+🔗 [linkedin.com/in/YOUR-LINKEDIN](https://www.linkedin.com/in/sumit0xff)
 🔗 [sumit.is-a.dev](https://sumit.is-a.dev/)
 🔗 [x.com/YOUR-TWITTER](#)
 
 ---
 
-`frontend:` React · Next.js
-`backend:` Node.js · Express
-`database:` MongoDB · MySQL · PostgreSQL
-`devops (learning):` Docker · Kubernetes · CI/CD pipelines (GitHub Actions)
-`web3 (curious about):` Solidity · Smart Contracts · Ethereum · dApps · Wallet Integration (MetaMask/Web3.js)
+`frontend:` React · Next.js <br>
+`backend:` Node.js · Express<br>
+`database:` MongoDB · MySQL · PostgreSQL<br>
+`devops (learning):` Docker · Kubernetes · CI/CD pipelines (GitHub Actions)<br>
+`web3 (curious about):` Solidity · Smart Contracts · Ethereum · dApps · Wallet Integration (MetaMask/Web3.js)<br>
 `security (curious about):` OWASP Top 10 · Web App Pentesting Basics · Ethical Hacking Fundamentals
 
 ---
