@@ -4,7 +4,7 @@
 
 <br><br>
 
-# who am i — sumit0xff
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=FFFFFF&background=00000000&center=true&vCenter=true&width=650&lines=who+am+i%3F;%5BERROR%3A+RAM+REMOVED+FROM+RUNNING+LAP%5D;KERNEL+PANIC%3A+MEMORY+CORRUPTED...;%3E%3E+whoami%3A+sumit0xff+%3C%3C" alt="whoami glitch animation" />
 
 full stack dev · going deep on devops · exploring web3
 
@@ -28,45 +28,28 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity.
 <br><br>
 
 <a href="https://sumit0xff.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/PORTFOLIO-sumit0xff.vercel.app-ff7034?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=2b2b2b" alt="Portfolio Website" />
+  <img src="./assets/bongo.gif" width="75" alt="Coding Cat" /><br>
+  <img src="https://img.shields.io/badge/PORTFOLIO-sumit0xff.vercel.app-18181B?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000" alt="Portfolio Website" />
 </a>
 
 ---
 
-</div>
-
-```text
-╭── [ stack & capabilities ] ──────────────────────────────────────────────╮
-│                                                                          │
-│  • frontend    :: React · Next.js                                        │
-│  • backend     :: Node.js · Express                                      │
-│  • database    :: MongoDB · MySQL · PostgreSQL                           │
-│  • devops      :: Docker · Kubernetes · CI/CD (GitHub Actions)           │
-│  • web3        :: Solidity · Smart Contracts · Ethereum · dApps          │
-│                                                                          │
-╰──────────────────────────────────────────────────────────────────────────╯
-```
-
-<div align="center">
+`frontend:` React · Next.js <br>
+`backend:` Node.js · Express<br>
+`database:` MongoDB · MySQL · PostgreSQL<br>
+`devops (learning):` Docker · Kubernetes · CI/CD pipelines (GitHub Actions)<br>
+`web3 (curious about):` Solidity · Smart Contracts · Ethereum · dApps · Wallet Integration (MetaMask/Web3.js)
 
 ---
 
 ```text
-$ nmap -sV visitor.local
-Host is up (0.00013s latency).
-PORT     STATE SERVICE
-1337/tcp open  sumit0xff (full-stack / sec)
-[!] 127.0.0.1 (localhost) — welcome.
+$ ssh fsociety@visitor
+> Hello, friend.
+> Target: 127.0.0.1 (localhost)
+> Location: [REDACTED BY PROXY]
+> Access granted. Hehe, welcome to my machine.
 ```
 
-<sub>this readme was last touched on `[13 sept 2026]` — if it's older than 6 months, assume I got busy, not that I quit.</sub>
-
-<br><br>
-
-> *"There is no peace for the man who has seen what he can become."*
-
-<br>
-
-<img src="./assets/header.gif" width="100%" alt="Header Banner" />
+<sub>this readme was last touched on `[13 sept 2026]` — if it's older than 3 months, assume I got busy, not that I quit.</sub>
 
 </div>
