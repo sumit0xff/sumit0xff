@@ -1,33 +1,44 @@
+![Banner](YOUR-BANNER-IMAGE-URL)
+
 <div align="center">
 
-# `[Your Name]`
-### `@YOUR-USERNAME`
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&pause=1200&color=39FF14&background=00000000&center=true&vCenter=true&width=500&lines=%24+whoami;sumit0xff;%24+_" alt="whoami terminal animation" />
 
-`[Your City]` · `[he/him | she/her | they/them]`
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=900&color=888888&background=00000000&center=true&vCenter=true&width=500&lines=%24+locate+--user;Fetching+location...;404%3A+City+Not+Found;127.0.0.1+(localhost)" alt="localhost location gag" />
+
+`he/him`
 
 full stack dev · going deep on devops · exploring web3 & cybersecurity
 
-`[PLACEHOLDER — one blunt line about you. No fluff. Example: "I ship code, break infra on purpose to learn it, and read too much about exploits."]`
+**Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity because I can't leave a locked door alone.**
 
 ---
 
-![GitHub followers](https://img.shields.io/github/followers/YOUR-USERNAME?style=social)
+![GitHub followers](https://img.shields.io/github/followers/sumit0xff?style=social)
 
 ---
 
-🔗 [github.com/YOUR-USERNAME](#)
-🔗 [linkedin.com/in/YOUR-LINKEDIN](#)
-🔗 [YOUR-PORTFOLIO.dev](#)
+🔗 [github.com/sumit0xff](https://github.com/sumit0xff)  
+🔗 [sumit.is-a.dev](https://sumit.is-a.dev/)  
+🔗 [linkedin.com/in/YOUR-LINKEDIN](#)  
 🔗 [x.com/YOUR-TWITTER](#)
 
 ---
 
-`stack:` JavaScript · TypeScript · React · Node.js · Docker · Kubernetes
-`learning:` DevOps pipelines, Web3 fundamentals
-`curious about:` Cybersecurity
+`frontend:` React · Next.js
+
+`backend:` Node.js · Express
+
+`database:` MongoDB · MySQL · PostgreSQL
+
+`devops (learning):` Docker · Kubernetes · CI/CD pipelines (GitHub Actions)
+
+`web3 (curious about):` Solidity · Smart Contracts · Ethereum · dApps · Wallet Integration (MetaMask/Web3.js)
+
+`security (curious about):` OWASP Top 10 · Web App Pentesting Basics · Ethical Hacking Fundamentals
 
 ---
 
-<sub>this readme was last touched on `[date]` — if it's older than 3 months, assume I got busy, not that I quit.</sub>
+<sub>this readme was last touched on <code>September 2026</code> — if it's older than 3 months, assume I got busy, not that I quit.</sub>
 
 </div>
