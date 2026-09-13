@@ -21,11 +21,17 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity becau
 <a href="https://www.linkedin.com/in/sumit0xff" target="_blank">
   <img src="https://skillicons.dev/icons?i=linkedin" width="45" height="45" alt="LinkedIn" />
 </a>&nbsp;&nbsp;&nbsp;
-<a href="https://sumit0xff.vercel.app" target="_blank">
-  <img src="https://skillicons.dev/icons?i=vercel" width="45" height="45" alt="Portfolio" />
+<a href="https://discord.com/users/sumit0xff" target="_blank">
+  <img src="https://skillicons.dev/icons?i=discord" width="45" height="45" alt="Discord" />
 </a>&nbsp;&nbsp;&nbsp;
 <a href="https://x.com/sumit0xff" target="_blank">
-  <img src="https://skillicons.dev/icons?i=x" width="45" height="45" alt="X (Twitter)" />
+  <img src="./assets/icons/x.svg" width="45" height="45" alt="X" />
+</a>
+
+<br><br>
+
+<a href="https://sumit0xff.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/PORTFOLIO-sumit0xff.vercel.app-ff7034?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=2b2b2b" alt="Portfolio Website" />
 </a>
 
 ---
