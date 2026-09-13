@@ -31,7 +31,6 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity.
 <br><br>
 
 <a href="https://sumit0xff.vercel.app" target="_blank">
-  <img src="./assets/bongo.gif" width="75" alt="Coding Cat" /><br>
   <img src="./assets/glitch-portfolio.svg" width="320" alt="Portfolio Website" />
 </a>
 
@@ -48,15 +47,13 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity.
 
 ---
 
-```text
-$ curl -s https://sumit0xff.vercel.app/api/status
-{
-  "status": "online",
-  "identity": "sumit0xff",
-  "mission": "building resilient systems & exploring web3",
-  "message": "Hello, friend. Welcome to my profile."
-}
-```
+<br>
+
+<img src="./assets/bongo.gif" width="130" alt="Bongo Cat" />
+
+<img src="./assets/terminal.svg" width="680" alt="sumit0xff live terminal" />
+
+<br><br>
 
 <sub>this readme was last touched on `[14 sept 2026]` — if it's older than 3 months, assume I got busy, not that I quit.</sub>
 
