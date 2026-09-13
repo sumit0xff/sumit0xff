@@ -57,92 +57,59 @@
         50% { opacity: 0; }
       }
 
-      /* Sequential reveal keyframes over 10s loop */
+      /* Non-looping entrance: each line reveals ONCE and stays permanently visible */
       .anim-cmd {
-        animation: reveal-cmd 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 0.2s forwards;
       }
       .anim-l1 {
-        animation: reveal-l1 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 0.6s forwards;
       }
       .anim-l2 {
-        animation: reveal-l2 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 0.9s forwards;
       }
       .anim-l3 {
-        animation: reveal-l3 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 1.2s forwards;
       }
       .anim-l4 {
-        animation: reveal-l4 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 1.5s forwards;
       }
       .anim-l5 {
-        animation: reveal-l5 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 1.8s forwards;
       }
       .anim-l6 {
-        animation: reveal-l6 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 2.1s forwards;
       }
       .anim-hint {
-        animation: reveal-hint 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 2.5s forwards;
       }
       .anim-end {
-        animation: reveal-end 10s infinite ease-out;
+        opacity: 0;
+        animation: reveal-line 0.35s ease-out 2.9s forwards;
       }
 
-      @keyframes reveal-cmd {
-        0%, 8% { opacity: 0; transform: translateY(-2px); }
-        12%, 95% { opacity: 1; transform: translateY(0); }
-        98%, 100% { opacity: 0; }
+      @keyframes reveal-line {
+        0% { opacity: 0; transform: translateY(-2px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
 
-      @keyframes reveal-l1 {
-        0%, 18% { opacity: 0; }
-        22%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-l2 {
-        0%, 23% { opacity: 0; }
-        27%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-l3 {
-        0%, 28% { opacity: 0; }
-        32%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-l4 {
-        0%, 33% { opacity: 0; }
-        37%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-l5 {
-        0%, 38% { opacity: 0; }
-        42%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-l6 {
-        0%, 43% { opacity: 0; }
-        47%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-hint {
-        0%, 49% { opacity: 0; }
-        53%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
-      }
-
-      @keyframes reveal-end {
-        0%, 55% { opacity: 0; }
-        58%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
+      @media (prefers-reduced-motion: reduce) {
+        .anim-cmd, .anim-l1, .anim-l2, .anim-l3, .anim-l4, .anim-l5, .anim-l6, .anim-hint, .anim-end {
+          opacity: 1 !important;
+          animation: none !important;
+        }
       }
     </style>
   </defs>
 
-  <!-- Terminal Container with Neon Purple Border & Subtle Drop Shadow -->
+  <!-- Terminal Container with Medium Purple Border -->
   <rect x="2" y="2" width="696" height="326" rx="10" fill="#090a10" stroke="#8968CD" stroke-opacity="0.45" stroke-width="1.5" />
   
   <!-- Window Header Bar -->
@@ -155,7 +122,7 @@
   <circle cx="60" cy="20" r="5.5" fill="#27c93f" />
   
   <!-- Terminal Title -->
-  <text x="350" y="24" fill="#7d8590" font-family="'Fira Code', monospace" font-size="12" font-weight="500" text-anchor="middle">sumit0xff@mainframe: ~ (bash)</text>
+  <text x="350" y="24" fill="#7d8590" font-family="'Fira Code', monospace" font-size="12" font-weight="500" text-anchor="middle">sumit0xff@arch: ~</text>
 
   <!-- Terminal Content -->
   <g class="terminal-window" font-size="13.5" transform="translate(25, 70)">
@@ -163,7 +130,7 @@
     <!-- Command Line -->
     <g class="anim-cmd">
       <text y="0">
-        <tspan class="prompt">@whoami:~$</tspan>
+        <tspan class="prompt">sumit0xff@arch:~$</tspan>
         <tspan class="cmd"> curl -s https://sumit0xff.vercel.app/api/status</tspan>
       </text>
     </g>
@@ -206,7 +173,7 @@
     <!-- Active Bottom Prompt with Blinking Cursor -->
     <g class="anim-end">
       <text y="212">
-        <tspan class="prompt">@whoami:~$</tspan>
+        <tspan class="prompt">sumit0xff@arch:~$</tspan>
         <tspan class="cursor" dx="8">█</tspan>
       </text>
     </g>

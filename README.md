@@ -31,7 +31,8 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity.
 <br><br>
 
 <a href="https://sumit0xff.vercel.app" target="_blank">
-  <img src="./assets/glitch-portfolio.svg" width="320" alt="Portfolio Website" />
+  <img src="./assets/bongo.gif" width="46" valign="middle" alt="Bongo Cat" />&nbsp;
+  <img src="./assets/glitch-portfolio.svg" width="280" valign="middle" alt="Portfolio Website" />
 </a>
 
 ---
@@ -48,8 +49,6 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity.
 ---
 
 <br>
-
-<img src="./assets/bongo.gif" width="130" alt="Bongo Cat" />
 
 <img src="./assets/terminal.svg" width="680" alt="sumit0xff live terminal" />
 
