@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="./assets/header.gif" width="100%" alt="Header Banner" />
+
+<br><br>
+
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&pause=1200&color=39FF14&background=00000000&center=true&vCenter=true&width=500&lines=%24+whoami;sumit0xff;%24+_" alt="whoami terminal animation" />
 
 
@@ -11,10 +15,7 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity becau
 
 ---
 
-🔗 [github.com/sumit0xff](https://github.com/sumit0xff)
-🔗 [linkedin.com/in/YOUR-LINKEDIN](https://www.linkedin.com/in/sumit0xff)
-🔗 [sumit.is-a.dev](https://sumit.is-a.dev/)
-🔗 [x.com/YOUR-TWITTER](#)
+🔗 [github.com/sumit0xff](https://github.com/sumit0xff) &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; 🔗 [linkedin.com/in/sumit0xff](https://www.linkedin.com/in/sumit0xff) &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; 🔗 [sumit0xff.vercel.app](https://sumit0xff.vercel.app) &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; 🔗 [x.com/sumit0xff](https://x.com/sumit0xff)
 
 ---
 
