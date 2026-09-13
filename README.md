@@ -15,7 +15,18 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity becau
 
 ---
 
-🔗 [github.com/sumit0xff](https://github.com/sumit0xff) &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; 🔗 [linkedin.com/in/sumit0xff](https://www.linkedin.com/in/sumit0xff) &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; 🔗 [sumit0xff.vercel.app](https://sumit0xff.vercel.app) &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; 🔗 [x.com/sumit0xff](https://x.com/sumit0xff)
+<a href="https://github.com/sumit0xff" target="_blank">
+  <img src="https://skillicons.dev/icons?i=github" width="45" height="45" alt="GitHub" />
+</a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/sumit0xff" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="45" height="45" alt="LinkedIn" />
+</a>&nbsp;&nbsp;&nbsp;
+<a href="https://sumit0xff.vercel.app" target="_blank">
+  <img src="https://skillicons.dev/icons?i=vercel" width="45" height="45" alt="Portfolio" />
+</a>&nbsp;&nbsp;&nbsp;
+<a href="https://x.com/sumit0xff" target="_blank">
+  <img src="https://skillicons.dev/icons?i=x" width="45" height="45" alt="X (Twitter)" />
+</a>
 
 ---
 
