@@ -11,7 +11,7 @@
         dominant-baseline: central;
       }
 
-      /* Base layer transition: swaps between 'who am i' and 'sumit0xff' */
+      /* Base layer transition: swaps between '$ who am i ?' and '$ sumit0xff' */
       .phase-1 {
         animation: text-phase1 6s infinite;
       }
@@ -31,16 +31,16 @@
         98%, 100% { opacity: 0; visibility: hidden; }
       }
 
-      /* Ghost layers RGB-split glitch keyframes */
+      /* Ghost layers RGB-split glitch keyframes with Medium Purple #8968CD and Cyan #00ffff */
       .ghost-cyan {
         fill: #00ffff;
-        opacity: 0.75;
+        opacity: 0.85;
         animation: glitch-cyan 6s infinite;
       }
-      .ghost-magenta {
-        fill: #ff00ff;
-        opacity: 0.75;
-        animation: glitch-magenta 6s infinite;
+      .ghost-purple {
+        fill: #8968CD;
+        opacity: 0.9;
+        animation: glitch-purple 6s infinite;
       }
       .base-text {
         fill: #ffffff;
@@ -48,43 +48,43 @@
 
       @keyframes glitch-cyan {
         0%, 38%, 48%, 88%, 100% { transform: translate(0, 0); opacity: 0; }
-        40% { transform: translate(-3px, -1.5px); opacity: 0.85; }
-        42% { transform: translate(3px, 1.5px); opacity: 0.9; }
-        44% { transform: translate(-4px, 2px); opacity: 1; }
-        46% { transform: translate(4px, -1px); opacity: 0.85; }
-        90% { transform: translate(-3px, -2px); opacity: 0.85; }
-        92% { transform: translate(3px, 1px); opacity: 0.9; }
-        94% { transform: translate(-2px, 0); opacity: 1; }
-        96% { transform: translate(3px, -1.5px); opacity: 0.85; }
+        40% { transform: translate(-3.5px, -1.5px); opacity: 0.85; }
+        42% { transform: translate(3.5px, 1.5px); opacity: 0.9; }
+        44% { transform: translate(-4.5px, 2px); opacity: 1; }
+        46% { transform: translate(4.5px, -1px); opacity: 0.85; }
+        90% { transform: translate(-3.5px, -2px); opacity: 0.85; }
+        92% { transform: translate(3.5px, 1px); opacity: 0.9; }
+        94% { transform: translate(-2.5px, 0); opacity: 1; }
+        96% { transform: translate(3.5px, -1.5px); opacity: 0.85; }
       }
 
-      @keyframes glitch-magenta {
+      @keyframes glitch-purple {
         0%, 38%, 48%, 88%, 100% { transform: translate(0, 0); opacity: 0; }
-        39% { transform: translate(3px, 1.5px); opacity: 0.85; }
-        41% { transform: translate(-3px, -1.5px); opacity: 0.9; }
-        43% { transform: translate(4px, 0); opacity: 1; }
-        45% { transform: translate(-3px, 2px); opacity: 0.85; }
-        89% { transform: translate(3px, 2px); opacity: 0.85; }
-        91% { transform: translate(-3px, -1px); opacity: 0.9; }
-        93% { transform: translate(4px, 1px); opacity: 1; }
-        95% { transform: translate(-2px, -2px); opacity: 0.85; }
+        39% { transform: translate(3.5px, 1.5px); opacity: 0.9; }
+        41% { transform: translate(-3.5px, -1.5px); opacity: 0.95; }
+        43% { transform: translate(4.5px, 0); opacity: 1; }
+        45% { transform: translate(-3.5px, 2px); opacity: 0.9; }
+        89% { transform: translate(3.5px, 2px); opacity: 0.9; }
+        91% { transform: translate(-3.5px, -1px); opacity: 0.95; }
+        93% { transform: translate(4.5px, 1px); opacity: 1; }
+        95% { transform: translate(-2.5px, -2px); opacity: 0.9; }
       }
     </style>
   </defs>
 
   <g class="text-container" transform="translate(350, 40)">
-    <!-- Phase 1: who am i -->
+    <!-- Phase 1: $ who am i ? -->
     <g class="phase-1">
-      <text class="ghost-cyan">who am i ?</text>
-      <text class="ghost-magenta">who am i ?</text>
-      <text class="base-text">who am i ?</text>
+      <text class="ghost-cyan">$ who am i ?</text>
+      <text class="ghost-purple">$ who am i ?</text>
+      <text class="base-text">$ who am i ?</text>
     </g>
 
-    <!-- Phase 2: sumit0xff -->
+    <!-- Phase 2: $ sumit0xff -->
     <g class="phase-2">
-      <text class="ghost-cyan">&gt; sumit0xff &lt;</text>
-      <text class="ghost-magenta">&gt; sumit0xff &lt;</text>
-      <text class="base-text">&gt; sumit0xff &lt;</text>
+      <text class="ghost-cyan">$ sumit0xff</text>
+      <text class="ghost-purple">$ sumit0xff</text>
+      <text class="base-text">$ sumit0xff</text>
     </g>
   </g>
 </svg>

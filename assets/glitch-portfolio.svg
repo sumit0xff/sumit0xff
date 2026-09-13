@@ -22,27 +22,27 @@
       }
       .label-cyan {
         fill: #00ffff;
-        opacity: 0.75;
+        opacity: 0.8;
         animation: glitch-cyan 2.8s infinite;
       }
-      .label-magenta {
-        fill: #ff00ff;
-        opacity: 0.75;
-        animation: glitch-magenta 2.8s infinite;
+      .label-purple {
+        fill: #8968CD;
+        opacity: 0.9;
+        animation: glitch-purple 2.8s infinite;
       }
       @keyframes glitch-cyan {
         0%, 86%, 100% { transform: translate(0, 0); opacity: 0; }
-        88% { transform: translate(-2px, -1px); opacity: 0.85; }
-        91% { transform: translate(2px, 1px); opacity: 0.9; }
+        88% { transform: translate(-2.5px, -1px); opacity: 0.85; }
+        91% { transform: translate(2.5px, 1px); opacity: 0.9; }
         93% { transform: translate(-3px, 0); opacity: 1; }
-        95% { transform: translate(1px, -1px); opacity: 0.85; }
+        95% { transform: translate(1.5px, -1px); opacity: 0.85; }
       }
-      @keyframes glitch-magenta {
+      @keyframes glitch-purple {
         0%, 86%, 100% { transform: translate(0, 0); opacity: 0; }
-        87% { transform: translate(2px, 1px); opacity: 0.85; }
-        90% { transform: translate(-2px, -1px); opacity: 0.9; }
+        87% { transform: translate(2.5px, 1px); opacity: 0.9; }
+        90% { transform: translate(-2.5px, -1px); opacity: 0.95; }
         92% { transform: translate(3px, 0); opacity: 1; }
-        94% { transform: translate(-1px, 1px); opacity: 0.85; }
+        94% { transform: translate(-1.5px, 1px); opacity: 0.9; }
       }
     </style>
   </defs>
@@ -50,8 +50,8 @@
   <rect class="box" x="1" y="1" width="358" height="46" />
   
   <g class="text-base" transform="translate(180, 24)">
-    <text class="label-cyan">🌐 sumit0xff.vercel.app ↗</text>
-    <text class="label-magenta">🌐 sumit0xff.vercel.app ↗</text>
-    <text class="label-base">🌐 sumit0xff.vercel.app ↗</text>
+    <text class="label-cyan">📡 sumit0xff.vercel.app ↗</text>
+    <text class="label-purple">📡 sumit0xff.vercel.app ↗</text>
+    <text class="label-base">📡 sumit0xff.vercel.app ↗</text>
   </g>
 </svg>
