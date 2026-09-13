@@ -11,7 +11,7 @@
         dominant-baseline: central;
       }
 
-      /* Base layer transition: swaps between '$ who am i ?' and '$ sumit0xff' */
+      /* Base layer transition: swaps between '@whoami:~$' and 'sumit0xff' */
       .phase-1 {
         animation: text-phase1 6s infinite;
       }
@@ -73,18 +73,18 @@
   </defs>
 
   <g class="text-container" transform="translate(350, 40)">
-    <!-- Phase 1: $ who am i ? -->
+    <!-- Phase 1: @whoami:~$ -->
     <g class="phase-1">
-      <text class="ghost-cyan">$ who am i ?</text>
-      <text class="ghost-purple">$ who am i ?</text>
-      <text class="base-text">$ who am i ?</text>
+      <text class="ghost-cyan">@whoami:~$</text>
+      <text class="ghost-purple">@whoami:~$</text>
+      <text class="base-text">@whoami:~$</text>
     </g>
 
-    <!-- Phase 2: $ sumit0xff -->
+    <!-- Phase 2: sumit0xff -->
     <g class="phase-2">
-      <text class="ghost-cyan">$ sumit0xff</text>
-      <text class="ghost-purple">$ sumit0xff</text>
-      <text class="base-text">$ sumit0xff</text>
+      <text class="ghost-cyan">sumit0xff</text>
+      <text class="ghost-purple">sumit0xff</text>
+      <text class="base-text">sumit0xff</text>
     </g>
   </g>
 </svg>
