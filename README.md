@@ -12,20 +12,11 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity.
 
 ---
 
-```bash
-$ curl -s https://sumit0xff.vercel.app/api/status
-```
-```json
-{
-  "status": "online",
-  "identity": "sumit0xff",
-  "role": "Backend & Infrastructure Engineer",
-  "focus": ["distributed systems", "cloud security", "Go", "Rust"],
-  "uptime": "99.9%",
-  "current_project": "see pinned repos",
-  "message": "Systems that don't fall over. That's the whole job."
-}
-```
+<br>
+
+<a href="#status"><img src="./assets/terminal.svg" width="680" alt="sumit0xff live terminal" /></a>
+
+<br><br>
 
 ---
 
