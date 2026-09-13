@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 48" width="360" height="48">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&amp;display=swap');
+
+      .box {
+        fill: #0d1117;
+        stroke: #30363d;
+        stroke-width: 1.5;
+        rx: 8px;
+        transition: all 0.2s ease;
+      }
+      .text-base {
+        font-family: 'Fira Code', monospace;
+        font-size: 14px;
+        font-weight: 700;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .label-base {
+        fill: #ffffff;
+      }
+      .label-cyan {
+        fill: #00ffff;
+        opacity: 0.75;
+        animation: glitch-cyan 2.8s infinite;
+      }
+      .label-magenta {
+        fill: #ff00ff;
+        opacity: 0.75;
+        animation: glitch-magenta 2.8s infinite;
+      }
+      @keyframes glitch-cyan {
+        0%, 86%, 100% { transform: translate(0, 0); opacity: 0; }
+        88% { transform: translate(-2px, -1px); opacity: 0.85; }
+        91% { transform: translate(2px, 1px); opacity: 0.9; }
+        93% { transform: translate(-3px, 0); opacity: 1; }
+        95% { transform: translate(1px, -1px); opacity: 0.85; }
+      }
+      @keyframes glitch-magenta {
+        0%, 86%, 100% { transform: translate(0, 0); opacity: 0; }
+        87% { transform: translate(2px, 1px); opacity: 0.85; }
+        90% { transform: translate(-2px, -1px); opacity: 0.9; }
+        92% { transform: translate(3px, 0); opacity: 1; }
+        94% { transform: translate(-1px, 1px); opacity: 0.85; }
+      }
+    </style>
+  </defs>
+
+  <rect class="box" x="1" y="1" width="358" height="46" />
+  
+  <g class="text-base" transform="translate(180, 24)">
+    <text class="label-cyan">🌐 sumit0xff.vercel.app ↗</text>
+    <text class="label-magenta">🌐 sumit0xff.vercel.app ↗</text>
+    <text class="label-base">🌐 sumit0xff.vercel.app ↗</text>
+  </g>
+</svg>
