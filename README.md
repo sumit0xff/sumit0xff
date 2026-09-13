@@ -30,6 +30,6 @@ Full stack by trade. DevOps by obsession. Web3 by curiosity. Cybersecurity becau
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=900&color=888888&background=00000000&center=true&vCenter=true&width=500&lines=%24+locate+--user;Fetching+location...;404%3A+City+Not+Found;127.0.0.1+(localhost)" alt="localhost location gag" />
 
 
-<sub>this readme was last touched on `[date]` — if it's older than 3 months, assume I got busy, not that I quit.</sub>
+<sub>this readme was last touched on `[13 sept 2026]` — if it's older than 6 months, assume I got busy, not that I quit.</sub>
 
 </div>
