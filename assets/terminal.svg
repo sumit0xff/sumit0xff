@@ -1,45 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" width="100%" height="330">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360">
   <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="window-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#12151d" />
+      <stop offset="100%" stop-color="#0c0e14" />
+    </linearGradient>
+
+    <linearGradient id="header-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1e28" />
+      <stop offset="100%" stop-color="#131620" />
+    </linearGradient>
+
+    <!-- Clip path to keep header and body within refined rounded corners -->
+    <clipPath id="window-clip">
+      <rect x="1" y="1" width="678" height="358" rx="10" ry="10" />
+    </clipPath>
+
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
-      
-      .terminal-window {
-        font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+      .term-text {
+        font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'DejaVu Sans Mono', 'Liberation Mono', Menlo, Consolas, monospace;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
       }
-      
-      .prompt {
-        fill: #8b949e;
-        font-weight: 700;
-      }
-      
-      .cmd {
-        fill: #ffffff;
+
+      .term-title {
+        font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'Liberation Mono', Menlo, Consolas, monospace;
+        font-size: 12px;
         font-weight: 500;
+        fill: #8b949e;
+        letter-spacing: 0.3px;
       }
-      
-      .key {
-        fill: #79c0ff;
-      }
-      
-      .val {
-        fill: #a5d6ff;
-      }
-      
-      .val-green {
-        fill: #7ee787;
-      }
-      
-      .bracket {
-        fill: #d2a8ff;
-      }
-      
-      .comma {
-        fill: #7d8590;
-      }
-      
-      .cursor {
-        fill: #ffffff;
-        animation: cursor-blink 0.8s step-end infinite;
+
+      /* Command Line Styling */
+      .prompt-user { fill: #7ee787; font-weight: 600; }
+      .prompt-at   { fill: #6e7681; }
+      .prompt-host { fill: #7ee787; font-weight: 500; }
+      .prompt-colon{ fill: #6e7681; }
+      .prompt-path { fill: #79c0ff; font-weight: 500; }
+      .prompt-sym  { fill: #8b949e; font-weight: 600; }
+      .cmd-bin     { fill: #f0883e; font-weight: 500; }
+      .cmd-flag    { fill: #8b949e; }
+      .cmd-arg     { fill: #a5d6ff; }
+
+      /* JSON Syntax Highlighting */
+      .json-bracket { fill: #d2a8ff; font-weight: 500; }
+      .json-key     { fill: #79c0ff; }
+      .json-punct   { fill: #7d8590; }
+      .json-val     { fill: #a5d6ff; }
+      .json-status  { fill: #7ee787; font-weight: 600; }
+      .json-uptime  { fill: #7ee787; font-weight: 600; }
+      .json-quote   { fill: #f0f6fc; font-weight: 400; }
+
+      /* Blinking Cursor */
+      .term-cursor {
+        fill: #58a6ff;
+        animation: cursor-blink 1.05s step-end infinite;
       }
 
       @keyframes cursor-blink {
@@ -47,144 +65,83 @@
         50% { opacity: 0; }
       }
 
-      /* Non-looping entrance */
-      .anim-cmd {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 0.2s forwards;
-      }
-      .anim-l1 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 0.4s forwards;
-      }
-      .anim-l2 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 0.6s forwards;
-      }
-      .anim-l3 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 0.8s forwards;
-      }
-      .anim-l4 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 1.0s forwards;
-      }
-      .anim-l5 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 1.2s forwards;
-      }
-      .anim-l6 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 1.4s forwards;
-      }
-      .anim-l7 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 1.6s forwards;
-      }
-      .anim-l8 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 1.8s forwards;
-      }
-      .anim-l9 {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 2.0s forwards;
-      }
-      .anim-end {
-        opacity: 0;
-        animation: reveal-line 0.3s ease-out 2.3s forwards;
-      }
-
-      @keyframes reveal-line {
-        0% { opacity: 0; transform: translateY(-2px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-
       @media (prefers-reduced-motion: reduce) {
-        .anim-cmd, .anim-l1, .anim-l2, .anim-l3, .anim-l4, .anim-l5, .anim-l6, .anim-l7, .anim-l8, .anim-l9, .anim-end {
-          opacity: 1 !important;
-          animation: none !important;
+        .term-cursor {
+          animation: none;
+          opacity: 0.85;
         }
       }
     </style>
   </defs>
 
-  <!-- Clean dark terminal container with neutral #30363d border (no purple shade) -->
-  <rect x="1.5" y="1.5" width="697" height="327" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
-  
-  <!-- Window Header Bar -->
-  <path d="M 2 10 Q 2 2 10 2 L 690 2 Q 698 2 698 10 L 698 36 L 2 36 Z" fill="#161b22" />
-  <line x1="2" y1="36" x2="698" y2="36" stroke="#21262d" stroke-width="1" />
-  
-  <!-- Traffic Light Window Buttons -->
-  <circle cx="22" cy="19" r="5" fill="#ff5f56" />
-  <circle cx="38" cy="19" r="5" fill="#ffbd2e" />
-  <circle cx="54" cy="19" r="5" fill="#27c93f" />
-  
-  <!-- Terminal Title -->
-  <text x="350" y="23" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12" font-weight="500" text-anchor="middle">sumit0xff@arch: ~</text>
+  <!-- Window Container with Rounded Clip -->
+  <g clip-path="url(#window-clip)">
+    <!-- Terminal Body Background -->
+    <rect x="1" y="1" width="678" height="358" fill="url(#window-gradient)" />
 
-  <!-- Terminal Content -->
-  <g class="terminal-window" font-size="13" transform="translate(25, 66)">
-    
-    <!-- Command Line -->
-    <g class="anim-cmd">
-      <text y="0">
-        <tspan class="prompt">sumit0xff@arch:~$</tspan>
-        <tspan class="cmd"> curl -s https://sumit0xff.vercel.app/api/status</tspan>
-      </text>
-    </g>
+    <!-- Terminal Header Bar Background -->
+    <rect x="1" y="1" width="678" height="37" fill="url(#header-gradient)" />
 
-    <!-- JSON Opening Bracket -->
-    <g class="anim-l1">
-      <text y="24"><tspan class="bracket">{</tspan></text>
-    </g>
+    <!-- Subtle Divider between Title Bar and Body -->
+    <line x1="1" y1="38" x2="679" y2="38" stroke="#232834" stroke-width="1" />
+  </g>
 
-    <!-- Status Line -->
-    <g class="anim-l2">
-      <text y="46">  <tspan class="key">"status":</tspan> <tspan class="val-green">"online"</tspan><tspan class="comma">,</tspan></text>
-    </g>
+  <!-- macOS-style Traffic Light Buttons -->
+  <g>
+    <!-- Close -->
+    <circle cx="22" cy="19" r="5.5" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5" />
+    <!-- Minimize -->
+    <circle cx="38" cy="19" r="5.5" fill="#febc2e" stroke="#d89e24" stroke-width="0.5" />
+    <!-- Maximize -->
+    <circle cx="54" cy="19" r="5.5" fill="#27c93f" stroke="#1aab29" stroke-width="0.5" />
+  </g>
 
-    <!-- Identity Line -->
-    <g class="anim-l3">
-      <text y="68">  <tspan class="key">"identity":</tspan> <tspan class="val">"sumit0xff"</tspan><tspan class="comma">,</tspan></text>
-    </g>
+  <!-- Centered Terminal Window Title -->
+  <text x="340" y="23.5" class="term-title" text-anchor="middle">sumit0xff@arch: ~</text>
 
-    <!-- Role Line -->
-    <g class="anim-l4">
-      <text y="90">  <tspan class="key">"role":</tspan> <tspan class="val">"Backend &amp; Infrastructure Engineer"</tspan><tspan class="comma">,</tspan></text>
-    </g>
+  <!-- Outer Window 1px Shell Border (Muted GitHub Dark Slate) -->
+  <rect x="1" y="1" width="678" height="358" rx="10" ry="10" fill="none" stroke="#30363d" stroke-width="1" />
 
-    <!-- Focus Line -->
-    <g class="anim-l5">
-      <text y="112">  <tspan class="key">"focus":</tspan> <tspan class="bracket">[</tspan><tspan class="val">"distributed systems"</tspan><tspan class="comma">, </tspan><tspan class="val">"cloud security"</tspan><tspan class="comma">, </tspan><tspan class="val">"Go"</tspan><tspan class="comma">, </tspan><tspan class="val">"Rust"</tspan><tspan class="bracket">]</tspan><tspan class="comma">,</tspan></text>
-    </g>
+  <!-- Subtle 1px Inner Highlight Bevel for Physical Depth -->
+  <rect x="2" y="2" width="676" height="356" rx="9" ry="9" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
 
-    <!-- Uptime Line -->
-    <g class="anim-l6">
-      <text y="134">  <tspan class="key">"uptime":</tspan> <tspan class="val-green">"99.9%"</tspan><tspan class="comma">,</tspan></text>
-    </g>
+  <!-- Terminal Content Area -->
+  <g class="term-text" xml:space="preserve">
+    <!-- 1. Active Command Line -->
+    <text x="26" y="72">
+      <tspan class="prompt-user">sumit0xff</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">arch</tspan><tspan class="prompt-colon">:</tspan><tspan class="prompt-path">~</tspan><tspan class="prompt-sym">$ </tspan><tspan class="cmd-bin">curl</tspan><tspan class="cmd-flag"> -s</tspan><tspan class="cmd-arg"> https://sumit0xff.vercel.app/api/status</tspan>
+    </text>
 
-    <!-- Current Project Line -->
-    <g class="anim-l7">
-      <text y="156">  <tspan class="key">"current_project":</tspan> <tspan class="val">"see pinned repos"</tspan><tspan class="comma">,</tspan></text>
-    </g>
+    <!-- 2. JSON Opening Bracket -->
+    <text x="26" y="100" class="json-bracket">{</text>
 
-    <!-- Message Line -->
-    <g class="anim-l8">
-      <text y="178">  <tspan class="key">"message":</tspan> <tspan class="val">"Systems that don't fall over. That's the whole job."</tspan></text>
-    </g>
+    <!-- 3. Status Line (Green accent for healthy/online) -->
+    <text x="42" y="124"><tspan class="json-key">"status"</tspan><tspan class="json-punct">: </tspan><tspan class="json-status">"online"</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- JSON Closing Bracket -->
-    <g class="anim-l9">
-      <text y="200"><tspan class="bracket">}</tspan></text>
-    </g>
+    <!-- 4. Identity Line -->
+    <text x="42" y="148"><tspan class="json-key">"identity"</tspan><tspan class="json-punct">: </tspan><tspan class="json-val">"sumit0xff"</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- Active Bottom Prompt with Blinking Cursor -->
-    <g class="anim-end">
-      <text y="234">
-        <tspan class="prompt">sumit0xff@arch:~$</tspan>
-        <tspan class="cursor" dx="8">█</tspan>
-      </text>
-    </g>
+    <!-- 5. Role Line -->
+    <text x="42" y="172"><tspan class="json-key">"role"</tspan><tspan class="json-punct">: </tspan><tspan class="json-val">"Backend &amp; Infrastructure Engineer"</tspan><tspan class="json-punct">,</tspan></text>
 
+    <!-- 6. Focus Line (Array) -->
+    <text x="42" y="196"><tspan class="json-key">"focus"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"distributed systems"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"cloud security"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Go"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Rust"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
+
+    <!-- 7. Uptime Line (Green accent matching online status) -->
+    <text x="42" y="220"><tspan class="json-key">"uptime"</tspan><tspan class="json-punct">: </tspan><tspan class="json-uptime">"99.9%"</tspan><tspan class="json-punct">,</tspan></text>
+
+    <!-- 8. Current Project Line -->
+    <text x="42" y="244"><tspan class="json-key">"current_project"</tspan><tspan class="json-punct">: </tspan><tspan class="json-val">"see pinned repos"</tspan><tspan class="json-punct">,</tspan></text>
+
+    <!-- 9. Message Line (Clear, punchy engineering quote) -->
+    <text x="42" y="268"><tspan class="json-key">"message"</tspan><tspan class="json-punct">: </tspan><tspan class="json-quote">"Systems that don&apos;t fall over. That&apos;s the whole job."</tspan></text>
+
+    <!-- 10. JSON Closing Bracket -->
+    <text x="26" y="292" class="json-bracket">}</text>
+
+    <!-- 11. Return Prompt with Blinking Block Cursor -->
+    <text x="26" y="322">
+      <tspan class="prompt-user">sumit0xff</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">arch</tspan><tspan class="prompt-colon">:</tspan><tspan class="prompt-path">~</tspan><tspan class="prompt-sym">$ </tspan><tspan class="term-cursor">█</tspan>
+    </text>
   </g>
 </svg>
