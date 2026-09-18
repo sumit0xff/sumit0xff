@@ -6,9 +6,9 @@
 
 <img src="./assets/glitch-whoami.svg" width="500" alt="who am i glitch animation" />
 
-   chronically curious engineer
+<h4><i>chronically curious engineer</i></h4>
 
-full-stack engineer · deep into infra & devops · CS undergrad
+full-stack engineer · deep into infra & devops · CS major
 
 ---
 
@@ -17,17 +17,6 @@ full-stack engineer · deep into infra & devops · CS undergrad
 <a href="#status"><img src="./assets/terminal.svg" width="680" alt="sumit0xff live terminal" /></a>
 
 <br><br>
-
----
-
-`core:` JavaScript · TypeScript · HTML · CSS · SQL <br>
-`frontend:` React · Next.js · React Router · Tailwind CSS · shadcn/ui · Recoil <br>
-`backend & apis:` Node.js · Bun · Express · REST APIs · WebSockets · OpenAPI · Zod <br>
-`databases:` PostgreSQL · MongoDB · Prisma · Drizzle · Mongoose <br>
-`auth & security:` JWT · Authentication · Rate Limiting · CAPTCHA <br>
-`real-time & infra:` Redis · WebRTC · Queues · Pub/Sub <br>
-`architecture:` Monorepos · Turborepo · SSR · CSR · SSG · ISR <br>
-`systems:` Load Balancing · Replication · Sharding · Scaling · System Design
 
 ---
 
