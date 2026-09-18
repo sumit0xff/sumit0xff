@@ -6,7 +6,7 @@
 
 <img src="./assets/glitch-whoami.svg" width="500" alt="who am i glitch animation" />
 
-                    chronically curious engineer
+   chronically curious engineer
 
 full-stack engineer · going deep on DevOps · majoring in Computer Science
 
