@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 472" width="680" height="472">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Pitch Black Background Gradients (No blue tint) -->
     <linearGradient id="window-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#12151d" />
-      <stop offset="100%" stop-color="#0c0e14" />
+      <stop offset="0%" stop-color="#08080a" />
+      <stop offset="100%" stop-color="#020203" />
     </linearGradient>
 
     <linearGradient id="header-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1a1e28" />
-      <stop offset="100%" stop-color="#131620" />
+      <stop offset="0%" stop-color="#121216" />
+      <stop offset="100%" stop-color="#0a0a0d" />
     </linearGradient>
 
-    <!-- Clip path to keep header and body within refined rounded corners -->
+    <!-- Clip path for refined rounded corners -->
     <clipPath id="window-clip">
-      <rect x="1" y="1" width="678" height="358" rx="10" ry="10" />
+      <rect x="1" y="1" width="678" height="470" rx="10" ry="10" />
     </clipPath>
 
     <style>
@@ -48,10 +48,10 @@
       /* JSON Syntax Highlighting */
       .json-bracket { fill: #d2a8ff; font-weight: 500; }
       .json-key     { fill: #79c0ff; }
-      .json-punct   { fill: #7d8590; }
-      .json-val     { fill: #a5d6ff; }
-      .json-status  { fill: #7ee787; font-weight: 600; }
-      .json-uptime  { fill: #7ee787; font-weight: 600; }
+      .json-cat     { fill: #e5c07b; font-weight: 500; }
+      .json-punct   { fill: #6e7681; }
+      .json-val     { fill: #c9d1d9; }
+      .json-role    { fill: #58a6ff; font-weight: 500; }
       .json-quote   { fill: #f0f6fc; font-weight: 400; }
 
       /* Blinking Cursor */
@@ -76,14 +76,14 @@
 
   <!-- Window Container with Rounded Clip -->
   <g clip-path="url(#window-clip)">
-    <!-- Terminal Body Background -->
-    <rect x="1" y="1" width="678" height="358" fill="url(#window-gradient)" />
+    <!-- Pitch Black Terminal Body -->
+    <rect x="1" y="1" width="678" height="470" fill="url(#window-gradient)" />
 
     <!-- Terminal Header Bar Background -->
     <rect x="1" y="1" width="678" height="37" fill="url(#header-gradient)" />
 
-    <!-- Subtle Divider between Title Bar and Body -->
-    <line x1="1" y1="38" x2="679" y2="38" stroke="#232834" stroke-width="1" />
+    <!-- Header Divider Line -->
+    <line x1="1" y1="38" x2="679" y2="38" stroke="#1c1c22" stroke-width="1" />
   </g>
 
   <!-- macOS-style Traffic Light Buttons -->
@@ -99,48 +99,63 @@
   <!-- Centered Terminal Window Title -->
   <text x="340" y="23.5" class="term-title" text-anchor="middle">sumit0xff@arch: ~</text>
 
-  <!-- Outer Window 1px Shell Border (Muted GitHub Dark Slate) -->
-  <rect x="1" y="1" width="678" height="358" rx="10" ry="10" fill="none" stroke="#30363d" stroke-width="1" />
+  <!-- Outer Window 1px Shell Border (Neutral Zinc/Carbon) -->
+  <rect x="1" y="1" width="678" height="470" rx="10" ry="10" fill="none" stroke="#26262b" stroke-width="1" />
 
   <!-- Subtle 1px Inner Highlight Bevel for Physical Depth -->
-  <rect x="2" y="2" width="676" height="356" rx="9" ry="9" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+  <rect x="2" y="2" width="676" height="468" rx="9" ry="9" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
 
   <!-- Terminal Content Area -->
   <g class="term-text" xml:space="preserve">
-    <!-- 1. Active Command Line -->
-    <text x="26" y="72">
+    <!-- Active Command Line -->
+    <text x="26" y="68">
       <tspan class="prompt-user">sumit0xff</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">arch</tspan><tspan class="prompt-colon">:</tspan><tspan class="prompt-path">~</tspan><tspan class="prompt-sym">$ </tspan><tspan class="cmd-bin">curl</tspan><tspan class="cmd-flag"> -s</tspan><tspan class="cmd-arg"> https://sumit0xff.vercel.app/api/status</tspan>
     </text>
 
-    <!-- 2. JSON Opening Bracket -->
-    <text x="26" y="100" class="json-bracket">{</text>
+    <!-- JSON Opening Bracket -->
+    <text x="26" y="94" class="json-bracket">{</text>
 
-    <!-- 3. Status Line (Green accent for healthy/online) -->
-    <text x="42" y="124"><tspan class="json-key">"status"</tspan><tspan class="json-punct">: </tspan><tspan class="json-status">"online"</tspan><tspan class="json-punct">,</tspan></text>
+    <!-- Role Line -->
+    <text x="42" y="118"><tspan class="json-key">"role"</tspan><tspan class="json-punct">: </tspan><tspan class="json-role">"Full-Stack &amp; Infrastructure Engineer"</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 4. Identity Line -->
-    <text x="42" y="148"><tspan class="json-key">"identity"</tspan><tspan class="json-punct">: </tspan><tspan class="json-val">"sumit0xff"</tspan><tspan class="json-punct">,</tspan></text>
+    <!-- Stack Group Opening -->
+    <text x="42" y="142"><tspan class="json-key">"stack"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">{</tspan></text>
 
-    <!-- 5. Role Line -->
-    <text x="42" y="172"><tspan class="json-key">"role"</tspan><tspan class="json-punct">: </tspan><tspan class="json-val">"Backend &amp; Infrastructure Engineer"</tspan><tspan class="json-punct">,</tspan></text>
+    <!-- 1. Core -->
+    <text x="58" y="166"><tspan class="json-cat">"core"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"JavaScript"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"TypeScript"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"HTML"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"CSS"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"SQL"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 6. Focus Line (Array) -->
-    <text x="42" y="196"><tspan class="json-key">"focus"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"distributed systems"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"cloud security"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Go"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Rust"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
+    <!-- 2. Frontend -->
+    <text x="58" y="190"><tspan class="json-cat">"frontend"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"React"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Next.js"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Tailwind CSS"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"shadcn/ui"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 7. Uptime Line (Green accent matching online status) -->
-    <text x="42" y="220"><tspan class="json-key">"uptime"</tspan><tspan class="json-punct">: </tspan><tspan class="json-uptime">"99.9%"</tspan><tspan class="json-punct">,</tspan></text>
+    <!-- 3. Backend & APIs -->
+    <text x="58" y="214"><tspan class="json-cat">"backend"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"Node.js"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Bun"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Express"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"REST"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"WebSockets"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Zod"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 8. Current Project Line -->
-    <text x="42" y="244"><tspan class="json-key">"current_project"</tspan><tspan class="json-punct">: </tspan><tspan class="json-val">"see pinned repos"</tspan><tspan class="json-punct">,</tspan></text>
+    <!-- 4. Databases -->
+    <text x="58" y="238"><tspan class="json-cat">"databases"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"PostgreSQL"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"MongoDB"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Prisma"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Drizzle"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 9. Message Line (Clear, punchy engineering quote) -->
-    <text x="42" y="268"><tspan class="json-key">"message"</tspan><tspan class="json-punct">: </tspan><tspan class="json-quote">"Systems that don&apos;t fall over. That&apos;s the whole job."</tspan></text>
+    <!-- 5. Auth & Security -->
+    <text x="58" y="262"><tspan class="json-cat">"auth_security"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"JWT"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Authentication"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Rate Limiting"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"CAPTCHA"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 10. JSON Closing Bracket -->
-    <text x="26" y="292" class="json-bracket">}</text>
+    <!-- 6. Real-time & Infra -->
+    <text x="58" y="286"><tspan class="json-cat">"realtime_infra"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"Redis"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"WebRTC"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Queues"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Pub/Sub"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
 
-    <!-- 11. Return Prompt with Blinking Block Cursor -->
-    <text x="26" y="322">
+    <!-- 7. Architecture -->
+    <text x="58" y="310"><tspan class="json-cat">"architecture"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"Monorepos"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Turborepo"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"SSR"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"CSR"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"SSG"</tspan><tspan class="json-bracket">]</tspan><tspan class="json-punct">,</tspan></text>
+
+    <!-- 8. Systems -->
+    <text x="58" y="334"><tspan class="json-cat">"systems"</tspan><tspan class="json-punct">: </tspan><tspan class="json-bracket">[</tspan><tspan class="json-val">"Load Balancing"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Replication"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Sharding"</tspan><tspan class="json-punct">, </tspan><tspan class="json-val">"Scaling"</tspan><tspan class="json-bracket">]</tspan></text>
+
+    <!-- Stack Group Closing -->
+    <text x="42" y="358" class="json-bracket">}<tspan class="json-punct">,</tspan></text>
+
+    <!-- Quote Line -->
+    <text x="42" y="382"><tspan class="json-key">"quote"</tspan><tspan class="json-punct">: </tspan><tspan class="json-quote">"Systems that don&apos;t fall over. That&apos;s the whole job."</tspan></text>
+
+    <!-- JSON Closing Bracket -->
+    <text x="26" y="406" class="json-bracket">}</text>
+
+    <!-- Return Prompt with Blinking Block Cursor -->
+    <text x="26" y="436">
       <tspan class="prompt-user">sumit0xff</tspan><tspan class="prompt-at">@</tspan><tspan class="prompt-host">arch</tspan><tspan class="prompt-colon">:</tspan><tspan class="prompt-path">~</tspan><tspan class="prompt-sym">$ </tspan><tspan class="term-cursor">█</tspan>
     </text>
   </g>

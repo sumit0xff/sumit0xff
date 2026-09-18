@@ -8,7 +8,7 @@
 
    chronically curious engineer
 
-full-stack engineer · going deep on DevOps · majoring in Computer Science
+full-stack engineer · deep into infra & devops · CS undergrad
 
 ---
 
